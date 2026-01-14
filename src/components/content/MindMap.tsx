@@ -169,7 +169,7 @@ function TreeNodeComponent({
                 style={{ left: '-12px' }}
               />
               
-              {node.children!.map((child, index) => (
+              {node.children!.map((child) => (
                 <TreeNodeComponent
                   key={child.id}
                   node={child}

@@ -2,7 +2,7 @@
 // Component Footer - Chân trang
 // ============================================
 
-import { Star, Heart, BookOpen } from 'lucide-react';
+import { Star, BookOpen } from 'lucide-react';
 
 export default function Footer() {
   // Năm hiện tại

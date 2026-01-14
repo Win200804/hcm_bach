@@ -8,6 +8,12 @@ interface MessageContentProps {
   content: string;
 }
 
+interface MatchResult {
+  match: RegExpMatchArray;
+  type: string;
+  index: number;
+}
+
 // Hàm parse và render markdown
 export default function MessageContent({ content }: MessageContentProps) {
   // Parse content thành các phần
@@ -104,49 +110,40 @@ export default function MessageContent({ content }: MessageContentProps) {
     while (remaining.length > 0) {
       // Tìm **bold**
       const boldMatch = remaining.match(/\*\*(.+?)\*\*/);
-      // Tìm *italic*
-      const italicMatch = remaining.match(/(?<!\*)\*([^*]+)\*(?!\*)/);
       // Tìm `code`
       const codeMatch = remaining.match(/`([^`]+)`/);
       // Tìm "trích dẫn"
       const quoteMatch = remaining.match(/"([^"]+)"/);
 
       // Tìm match đầu tiên
-      let firstMatch: { match: RegExpMatchArray; type: string } | null = null;
+      let firstMatch: MatchResult | null = null;
       
       if (boldMatch && boldMatch.index !== undefined) {
-        if (!firstMatch || boldMatch.index < (firstMatch.match.index ?? Infinity)) {
-          firstMatch = { match: boldMatch, type: 'bold' };
-        }
-      }
-      if (italicMatch && italicMatch.index !== undefined) {
-        if (!firstMatch || italicMatch.index < (firstMatch.match.index ?? Infinity)) {
-          firstMatch = { match: italicMatch, type: 'italic' };
-        }
+        firstMatch = { match: boldMatch, type: 'bold', index: boldMatch.index };
       }
       if (codeMatch && codeMatch.index !== undefined) {
-        if (!firstMatch || codeMatch.index < (firstMatch.match.index ?? Infinity)) {
-          firstMatch = { match: codeMatch, type: 'code' };
+        if (!firstMatch || codeMatch.index < firstMatch.index) {
+          firstMatch = { match: codeMatch, type: 'code', index: codeMatch.index };
         }
       }
       if (quoteMatch && quoteMatch.index !== undefined) {
-        if (!firstMatch || quoteMatch.index < (firstMatch.match.index ?? Infinity)) {
-          firstMatch = { match: quoteMatch, type: 'quote' };
+        if (!firstMatch || quoteMatch.index < firstMatch.index) {
+          firstMatch = { match: quoteMatch, type: 'quote', index: quoteMatch.index };
         }
       }
 
-      if (firstMatch && firstMatch.match.index !== undefined) {
+      if (firstMatch) {
         // Thêm text trước match
-        if (firstMatch.match.index > 0) {
+        if (firstMatch.index > 0) {
           parts.push(
             <span key={`text-${keyIndex++}`}>
-              {remaining.substring(0, firstMatch.match.index)}
+              {remaining.substring(0, firstMatch.index)}
             </span>
           );
         }
 
         // Render match theo type
-        const content = firstMatch.match[1];
+        const matchContent = firstMatch.match[1];
         switch (firstMatch.type) {
           case 'bold':
             parts.push(
@@ -154,18 +151,8 @@ export default function MessageContent({ content }: MessageContentProps) {
                 key={`bold-${keyIndex++}`} 
                 className="font-semibold text-vn-yellow"
               >
-                {content}
+                {matchContent}
               </strong>
-            );
-            break;
-          case 'italic':
-            parts.push(
-              <em 
-                key={`italic-${keyIndex++}`} 
-                className="italic text-vn-cream"
-              >
-                {content}
-              </em>
             );
             break;
           case 'code':
@@ -174,7 +161,7 @@ export default function MessageContent({ content }: MessageContentProps) {
                 key={`code-${keyIndex++}`} 
                 className="bg-vn-dark-light px-1.5 py-0.5 rounded text-vn-yellow font-mono text-sm"
               >
-                {content}
+                {matchContent}
               </code>
             );
             break;
@@ -184,14 +171,14 @@ export default function MessageContent({ content }: MessageContentProps) {
                 key={`quote-${keyIndex++}`} 
                 className="text-vn-gold italic"
               >
-                "{content}"
+                "{matchContent}"
               </span>
             );
             break;
         }
 
         // Tiếp tục với phần còn lại
-        remaining = remaining.substring(firstMatch.match.index + firstMatch.match[0].length);
+        remaining = remaining.substring(firstMatch.index + firstMatch.match[0].length);
       } else {
         // Không còn match nào, thêm phần còn lại
         parts.push(<span key={`rest-${keyIndex++}`}>{remaining}</span>);
@@ -208,4 +195,3 @@ export default function MessageContent({ content }: MessageContentProps) {
     </div>
   );
 }
-

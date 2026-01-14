@@ -3,7 +3,7 @@
 // Timer 25 phút, hiển thị kết quả sau khi nộp bài
 // ============================================
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, ChevronLeft, ChevronRight, Send, RotateCcw, BookOpen, Info, Clock, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,6 @@ export default function QuizPage() {
     currentIndex,
     totalQuestions,
     answeredCount,
-    isCompleted,
     selectedAnswer,
     showResult,
     result,
