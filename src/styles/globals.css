@@ -1,0 +1,126 @@
+/* Import Tailwind CSS layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables cho theme Patriotic */
+:root {
+  --primary-red: #DA251D;
+  --primary-yellow: #FFCD00;
+  --dark-red: #8B0000;
+  --gold: #FFD700;
+  --cream: #FFF8DC;
+  --dark-bg: #1A1A2E;
+  --dark-light: #16213E;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--cream);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar tùy chỉnh */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-red);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-red);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* Selection highlight */
+::selection {
+  background: var(--primary-red);
+  color: var(--cream);
+}
+
+/* Component utilities */
+@layer components {
+  /* Card cơ bản */
+  .card {
+    @apply bg-vn-dark-light rounded-xl p-6 border border-vn-red/20 
+           hover:border-vn-yellow/40 transition-all duration-300;
+  }
+
+  /* Button primary */
+  .btn-primary {
+    @apply bg-gradient-to-r from-vn-red to-vn-red-dark text-white 
+           px-6 py-3 rounded-lg font-medium
+           hover:from-vn-red-light hover:to-vn-red 
+           transform hover:scale-105 transition-all duration-300
+           shadow-lg shadow-vn-red/30;
+  }
+
+  /* Button secondary */
+  .btn-secondary {
+    @apply bg-transparent border-2 border-vn-yellow text-vn-yellow
+           px-6 py-3 rounded-lg font-medium
+           hover:bg-vn-yellow hover:text-vn-dark
+           transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-vn-yellow via-vn-gold to-vn-yellow 
+           bg-clip-text text-transparent;
+  }
+
+  /* Star decoration */
+  .star-icon {
+    @apply text-vn-yellow animate-star-shine;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
