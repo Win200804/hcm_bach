@@ -93,7 +93,7 @@ export async function sendMessageToGemini(userMessage: string): Promise<string> 
         ...chatHistory
       ],
       generationConfig: {
-        maxOutputTokens: 1024,
+        maxOutputTokens: 4096,
         temperature: 0.7,
       }
     });
