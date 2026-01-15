@@ -7,341 +7,341 @@ import { QuizQuestion } from '../types';
 
 export const quizQuestions: QuizQuestion[] = [
   // ========== PHẦN 1: Quan niệm về CNXH (5 câu) ==========
-  {
-    id: 1,
-    question: 'Theo Hồ Chí Minh, mục tiêu cốt lõi của Chủ nghĩa xã hội là gì?',
-    options: [
-      'Phát triển kinh tế vượt bậc',
-      'Làm cho dân giàu, nước mạnh, mang lại ấm no, tự do, hạnh phúc cho nhân dân',
-      'Xây dựng quân đội hùng mạnh',
-      'Mở rộng quan hệ quốc tế'
-    ],
-    correctAnswer: 1,
-    explanation: 'Hồ Chí Minh khái quát mục tiêu xây dựng CNXH bằng cụm từ "Làm sao cho dân giàu, nước mạnh", với mục tiêu tối thượng là mang lại cuộc sống ấm no, tự do và hạnh phúc cho toàn thể nhân dân.',
-    section: 'Quan niệm tổng quát về CNXH'
-  },
-  {
-    id: 2,
-    question: 'Đặc điểm nổi bật trong cách tiếp cận khái niệm CNXH của Hồ Chí Minh là gì?',
-    options: [
-      'Mang tính giáo điều, cứng nhắc',
-      'Sao chép nguyên mẫu từ Liên Xô',
-      'Dung dị, dễ hiểu nhưng sâu sắc, tập trung vào con người',
-      'Hoàn toàn mới, không dựa trên lý luận Mác-Lênin'
-    ],
-    correctAnswer: 2,
-    explanation: 'Hồ Chí Minh không để lại định nghĩa giáo điều về CNXH mà tiếp cận thông qua những cách diễn đạt dung dị, dễ hiểu nhưng vô cùng sâu sắc, tập trung vào mục tiêu phục vụ con người.',
-    section: 'Quan niệm tổng quát về CNXH'
-  },
-  {
-    id: 3,
-    question: 'Theo Hồ Chí Minh, CNXH khác với các chế độ cũ ở điểm căn bản nào?',
-    options: [
-      'Có nhiều tài nguyên thiên nhiên hơn',
-      'Do nhân dân lao động làm chủ, không có sự bóc lột',
-      'Có công nghệ tiên tiến hơn',
-      'Có nhiều đảng phái chính trị'
-    ],
-    correctAnswer: 1,
-    explanation: 'Khác với các chế độ cũ nơi lợi ích của giai cấp thống trị được thỏa mãn dựa trên sự áp bức, CNXH là chế độ do nhân dân lao động làm chủ, không còn vết tích bóc lột.',
-    section: 'Quan niệm tổng quát về CNXH'
-  },
-  {
-    id: 4,
-    question: 'Trong quan niệm của Hồ Chí Minh, mối quan hệ giữa CNXH và Cộng sản chủ nghĩa là gì?',
-    options: [
-      'Hai hình thái xã hội hoàn toàn khác nhau',
-      'CNXH là giai đoạn cao hơn CSCN',
-      'Là các giai đoạn phát triển khác nhau của cùng một hình thái xã hội',
-      'Không có mối quan hệ với nhau'
-    ],
-    correctAnswer: 2,
-    explanation: 'CNXH và Cộng sản chủ nghĩa là những giai đoạn phát triển khác nhau của cùng một hình thái xã hội, nơi sức sản xuất phát triển cao và không còn vết tích bóc lột.',
-    section: 'Quan niệm tổng quát về CNXH'
-  },
-  {
-    id: 5,
-    question: 'CNXH theo Hồ Chí Minh trước hết nhằm giúp nhân dân lao động điều gì?',
-    options: [
-      'Có quyền lực chính trị',
-      'Thoát khỏi nạn bần cùng, có công ăn việc làm',
-      'Được du lịch nước ngoài',
-      'Có nhà ở riêng'
-    ],
-    correctAnswer: 1,
-    explanation: 'CNXH trước hết nhằm làm cho nhân dân lao động thoát khỏi nạn bần cùng, đảm bảo mọi người đều có công ăn việc làm.',
-    section: 'Quan niệm tổng quát về CNXH'
-  },
+{
+  id: 1,
+  question: 'Theo tư tưởng Hồ Chí Minh, CNXH trước hết nhằm giải quyết vấn đề gì cho nhân dân?',
+  options: [
+    'Thoát khỏi bần cùng, có việc làm ổn định',
+    'Mở rộng quan hệ đối ngoại',
+    'Phát triển khoa học quân sự',
+    'Tăng cường quản lý nhà nước'
+  ],
+  correctAnswer: 0,
+  explanation: 'Hồ Chí Minh nhấn mạnh CNXH trước hết phải làm cho nhân dân lao động thoát khỏi nạn bần cùng và có công ăn việc làm.',
+  section: 'Quan niệm tổng quát về CNXH'
+},
+{
+  id: 2,
+  question: 'Cách tiếp cận CNXH của Hồ Chí Minh có đặc điểm nổi bật nào?',
+  options: [
+    'Giáo điều, thiên về lý luận trừu tượng',
+    'Dung dị, dễ hiểu, gắn với con người',
+    'Hoàn toàn sao chép mô hình nước ngoài',
+    'Chỉ nhấn mạnh yếu tố kinh tế'
+  ],
+  correctAnswer: 1,
+  explanation: 'Người không đưa ra định nghĩa cứng nhắc mà diễn đạt CNXH bằng những cách nói giản dị, dễ hiểu, lấy con người làm trung tâm.',
+  section: 'Quan niệm tổng quát về CNXH'
+},
+{
+  id: 3,
+  question: 'Theo Hồ Chí Minh, điểm khác biệt căn bản của CNXH so với các chế độ cũ là gì?',
+  options: [
+    'Có trình độ khoa học cao',
+    'Có nền kinh tế phát triển nhanh',
+    'Do nhân dân lao động làm chủ',
+    'Có hệ thống pháp luật chặt chẽ'
+  ],
+  correctAnswer: 2,
+  explanation: 'CNXH khác về bản chất khi quyền làm chủ thuộc về nhân dân lao động, không còn sự áp bức bóc lột.',
+  section: 'Quan niệm tổng quát về CNXH'
+},
+{
+  id: 4,
+  question: 'Theo tư tưởng Hồ Chí Minh, mối quan hệ giữa CNXH và CNCS được hiểu như thế nào?',
+  options: [
+    'Hai hình thái xã hội đối lập',
+    'Không liên quan đến nhau',
+    'CNCS tách rời CNXH',
+    'Là các giai đoạn của cùng một hình thái xã hội'
+  ],
+  correctAnswer: 3,
+  explanation: 'CNXH và CNCS là những giai đoạn phát triển khác nhau của cùng một hình thái xã hội.',
+  section: 'Quan niệm tổng quát về CNXH'
+},
+{
+  id: 5,
+  question: 'Mục tiêu tổng quát được Hồ Chí Minh khái quát khi nói về CNXH là gì?',
+  options: [
+    'Xây dựng xã hội hiện đại',
+    'Làm cho dân giàu, nước mạnh',
+    'Phát triển công nghiệp nặng',
+    'Tăng trưởng kinh tế nhanh'
+  ],
+  correctAnswer: 1,
+  explanation: 'Người khái quát mục tiêu CNXH bằng cụm từ chiến lược “dân giàu, nước mạnh”.',
+  section: 'Quan niệm tổng quát về CNXH'
+},
 
-  // ========== PHẦN 2: Đặc trưng cơ bản (5 câu) ==========
-  {
-    id: 6,
-    question: 'Đặc trưng về chính trị của xã hội XHCN theo Hồ Chí Minh là gì?',
-    options: [
-      'Chế độ quân chủ lập hiến',
-      'Chế độ dân chủ thực sự, nhân dân là chủ và làm chủ',
-      'Chế độ đa đảng',
-      'Chế độ phong kiến'
-    ],
-    correctAnswer: 1,
-    explanation: 'Đặc trưng chính trị của CNXH là chế độ dân chủ thực sự, trong đó nhân dân là chủ và làm chủ dưới sự lãnh đạo của Đảng Cộng sản trên nền tảng liên minh công - nông.',
-    section: 'Đặc trưng cơ bản của xã hội XHCN'
-  },
-  {
-    id: 7,
-    question: 'Đặc trưng kinh tế cốt lõi của xã hội XHCN là gì?',
-    options: [
-      'Kinh tế tư nhân chiếm ưu thế',
-      'Chế độ sở hữu công cộng (công hữu) về tư liệu sản xuất chủ yếu',
-      'Không có sở hữu',
-      'Chỉ có sở hữu nhà nước'
-    ],
-    correctAnswer: 1,
-    explanation: 'Chế độ sở hữu công cộng (công hữu) về tư liệu sản xuất chủ yếu là đặc trưng kinh tế cốt lõi của xã hội XHCN theo tư tưởng Hồ Chí Minh.',
-    section: 'Đặc trưng cơ bản của xã hội XHCN'
-  },
-  {
-    id: 8,
-    question: 'Lực lượng sản xuất hiện đại trong xã hội XHCN biểu hiện qua những yếu tố nào?',
-    options: [
-      'Chỉ có máy móc công nghiệp',
-      'Công cụ lao động, máy móc, sức điện và sức nguyên tử',
-      'Chỉ có sức lao động con người',
-      'Chỉ có nông nghiệp truyền thống'
-    ],
-    correctAnswer: 1,
-    explanation: 'Lực lượng sản xuất hiện đại biểu hiện qua sự phát triển của công cụ lao động, máy móc, sức điện và sức nguyên tử.',
-    section: 'Đặc trưng cơ bản của xã hội XHCN'
-  },
-  {
-    id: 9,
-    question: 'Đặc trưng về văn hóa - đạo đức của xã hội XHCN bao gồm những nội dung gì?',
-    options: [
-      'Chỉ quan tâm phát triển kinh tế',
-      'Văn hóa đạo đức cao, xóa bỏ bóc lột, công bằng, các dân tộc đoàn kết',
-      'Mỗi người tự lo cho bản thân',
-      'Ưu tiên văn hóa nước ngoài'
-    ],
-    correctAnswer: 1,
-    explanation: 'Xã hội XHCN có trình độ văn hóa và đạo đức phát triển cao, xóa bỏ bóc lột, con người được tôn trọng bình đẳng, các dân tộc đoàn kết gắn bó.',
-    section: 'Đặc trưng cơ bản của xã hội XHCN'
-  },
-  {
-    id: 10,
-    question: 'Theo Hồ Chí Minh, nhân tố quyết định thành công trong xây dựng CNXH là gì?',
-    options: [
-      'Có nhiều tiền',
-      'Có công nghệ hiện đại nhất',
-      'Sự lãnh đạo của Đảng cách mạng chân chính, tận tâm phục vụ nhân dân',
-      'Có sự giúp đỡ từ nước ngoài'
-    ],
-    correctAnswer: 2,
-    explanation: 'CNXH là công trình tập thể của nhân dân dưới sự lãnh đạo của Đảng. Sự lãnh đạo của Đảng cách mạng chân chính, tận tâm phục vụ nhân dân là nhân tố quyết định thành công.',
-    section: 'Đặc trưng cơ bản của xã hội XHCN'
-  },
+// ========== PHẦN 2: Đặc trưng cơ bản (5 câu) ==========
+{
+  id: 6,
+  question: 'Đặc trưng chính trị cơ bản của xã hội XHCN theo Hồ Chí Minh là gì?',
+  options: [
+    'Chế độ đa đảng',
+    'Chế độ dân chủ thực sự',
+    'Chế độ quân chủ',
+    'Chế độ pháp quyền thuần túy'
+  ],
+  correctAnswer: 1,
+  explanation: 'CNXH là xã hội có chế độ dân chủ thực sự, trong đó nhân dân là chủ và làm chủ.',
+  section: 'Đặc trưng cơ bản của xã hội XHCN'
+},
+{
+  id: 7,
+  question: 'Đặc trưng kinh tế cốt lõi của xã hội XHCN là gì?',
+  options: [
+    'Sở hữu tư nhân chiếm ưu thế',
+    'Không tồn tại sở hữu',
+    'Sở hữu công cộng về tư liệu sản xuất chủ yếu',
+    'Chỉ tồn tại sở hữu nhà nước'
+  ],
+  correctAnswer: 2,
+  explanation: 'Sở hữu công cộng về tư liệu sản xuất chủ yếu là đặc trưng kinh tế nền tảng của CNXH.',
+  section: 'Đặc trưng cơ bản của xã hội XHCN'
+},
+{
+  id: 8,
+  question: 'Lực lượng sản xuất hiện đại trong xã hội XHCN thể hiện qua yếu tố nào?',
+  options: [
+    'Kinh nghiệm sản xuất thủ công',
+    'Sự phát triển của công cụ và máy móc',
+    'Chỉ dựa vào lao động giản đơn',
+    'Sản xuất nhỏ lẻ'
+  ],
+  correctAnswer: 1,
+  explanation: 'Lực lượng sản xuất hiện đại thể hiện qua sự phát triển của công cụ lao động, máy móc, điện và năng lượng mới.',
+  section: 'Đặc trưng cơ bản của xã hội XHCN'
+},
+{
+  id: 9,
+  question: 'Đặc trưng về văn hóa – đạo đức của xã hội XHCN là gì?',
+  options: [
+    'Chạy theo lợi ích vật chất',
+    'Đề cao cạnh tranh cá nhân',
+    'Ưu tiên văn hóa ngoại lai',
+    'Văn hóa, đạo đức phát triển cao, công bằng'
+  ],
+  correctAnswer: 3,
+  explanation: 'Xã hội XHCN có trình độ văn hóa và đạo đức cao, đảm bảo công bằng và bình đẳng.',
+  section: 'Đặc trưng cơ bản của xã hội XHCN'
+},
+{
+  id: 10,
+  question: 'Ai là chủ thể xây dựng CNXH theo tư tưởng Hồ Chí Minh?',
+  options: [
+    'Nhà nước',
+    'Đảng Cộng sản',
+    'Nhân dân dưới sự lãnh đạo của Đảng',
+    'Tầng lớp trí thức'
+  ],
+  correctAnswer: 2,
+  explanation: 'CNXH là công trình tập thể của nhân dân, do nhân dân xây dựng dưới sự lãnh đạo của Đảng.',
+  section: 'Đặc trưng cơ bản của xã hội XHCN'
+},
 
-  // ========== PHẦN 3: Mục tiêu và động lực (5 câu) ==========
-  {
-    id: 11,
-    question: 'Mục tiêu chính trị trong xây dựng CNXH theo Hồ Chí Minh là gì?',
-    options: [
-      'Xây dựng chế độ độc tài',
-      'Xây dựng chế độ "dân làm chủ" với quyền bầu cử, ứng cử, tự do ngôn luận',
-      'Xây dựng chế độ quân chủ',
-      'Không có mục tiêu chính trị cụ thể'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mục tiêu chính trị là xây dựng chế độ "dân làm chủ", nơi nhân dân thực hiện quyền bầu cử, ứng cử và có quyền tự do ngôn luận, hội họp.',
-    section: 'Mục tiêu và động lực phát triển CNXH'
-  },
-  {
-    id: 12,
-    question: 'Trong hệ thống động lực phát triển CNXH, Hồ Chí Minh xác định lực lượng mạnh nhất là gì?',
-    options: [
-      'Quân đội',
-      'Trí thức',
-      'Sức mạnh đoàn kết toàn dân',
-      'Công nhân'
-    ],
-    correctAnswer: 2,
-    explanation: 'Hồ Chí Minh khẳng định sức mạnh đoàn kết toàn dân là lực lượng mạnh nhất trong mọi lực lượng.',
-    section: 'Mục tiêu và động lực phát triển CNXH'
-  },
-  {
-    id: 13,
-    question: 'Theo Hồ Chí Minh, muốn xây dựng CNXH trước hết cần có điều gì?',
-    options: [
-      'Có nhiều tiền vốn',
-      'Có "con người xã hội chủ nghĩa" - người có đạo đức, ý thức làm chủ',
-      'Có công nghệ tiên tiến nhất',
-      'Có sự giúp đỡ quốc tế'
-    ],
-    correctAnswer: 1,
-    explanation: 'Muốn xây dựng CNXH trước hết cần có "con người xã hội chủ nghĩa" - những người có đạo đức, ý thức làm chủ, tinh thần tập thể và chống lại chủ nghĩa cá nhân.',
-    section: 'Mục tiêu và động lực phát triển CNXH'
-  },
-  {
-    id: 14,
-    question: 'Mục tiêu kinh tế trong xây dựng CNXH bao gồm những nội dung nào?',
-    options: [
-      'Chỉ phát triển nông nghiệp',
-      'Công nghiệp và nông nghiệp hiện đại, khoa học kỹ thuật tiên tiến, kinh tế quốc doanh lãnh đạo',
-      'Chỉ phát triển thương mại',
-      'Không quan tâm kinh tế'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mục tiêu kinh tế là xây dựng nền kinh tế với công nghiệp và nông nghiệp hiện đại, khoa học kỹ thuật tiên tiến, kinh tế quốc doanh phải lãnh đạo và ưu tiên phát triển kinh tế hợp tác xã.',
-    section: 'Mục tiêu và động lực phát triển CNXH'
-  },
-  {
-    id: 15,
-    question: 'Hồ Chí Minh đề cập đến lợi ích cá nhân như thế nào trong xây dựng CNXH?',
-    options: [
-      'Hoàn toàn bỏ qua lợi ích cá nhân',
-      'Chỉ quan tâm lợi ích tập thể',
-      'Phải thỏa mãn lợi ích cá nhân chính đáng để mỗi người phát huy sở trường',
-      'Lợi ích cá nhân là quan trọng nhất'
-    ],
-    correctAnswer: 2,
-    explanation: 'Phải chú ý xem xét và thỏa mãn lợi ích cá nhân đúng đắn để mỗi người có điều kiện cải thiện đời sống riêng, phát huy sở trường cá nhân.',
-    section: 'Mục tiêu và động lực phát triển CNXH'
-  },
+// ========== PHẦN 3: Mục tiêu và động lực (5 câu) ==========
+{
+  id: 11,
+  question: 'Mục tiêu chính trị của CNXH theo Hồ Chí Minh là gì?',
+  options: [
+    'Dân làm chủ',
+    'Tập trung quyền lực',
+    'Ổn định bộ máy',
+    'Mở rộng lãnh thổ'
+  ],
+  correctAnswer: 0,
+  explanation: 'Mục tiêu chính trị là xây dựng chế độ dân làm chủ.',
+  section: 'Mục tiêu và động lực phát triển CNXH'
+},
+{
+  id: 12,
+  question: 'Động lực mạnh nhất của CNXH theo Hồ Chí Minh là gì?',
+  options: [
+    'Sức mạnh đoàn kết toàn dân',
+    'Nguồn vốn đầu tư',
+    'Khoa học công nghệ',
+    'Quân đội'
+  ],
+  correctAnswer: 0,
+  explanation: 'Người khẳng định đoàn kết toàn dân là lực lượng mạnh nhất.',
+  section: 'Mục tiêu và động lực phát triển CNXH'
+},
+{
+  id: 13,
+  question: 'Yếu tố con người trong xây dựng CNXH được Hồ Chí Minh nhấn mạnh như thế nào?',
+  options: [
+    'Chỉ cần trình độ chuyên môn',
+    'Chỉ cần trung thành chính trị',
+    'Cần con người XHCN có đạo đức',
+    'Chỉ cần tinh thần lao động'
+  ],
+  correctAnswer: 2,
+  explanation: 'Muốn xây dựng CNXH phải có con người XHCN có đạo đức và ý thức làm chủ.',
+  section: 'Mục tiêu và động lực phát triển CNXH'
+},
+{
+  id: 14,
+  question: 'Mục tiêu kinh tế của CNXH theo Hồ Chí Minh là gì?',
+  options: [
+    'Phát triển dịch vụ',
+    'Công nghiệp và nông nghiệp hiện đại',
+    'Kinh tế thị trường tự do',
+    'Sản xuất nhỏ'
+  ],
+  correctAnswer: 1,
+  explanation: 'Người xác định xây dựng công nghiệp và nông nghiệp hiện đại.',
+  section: 'Mục tiêu và động lực phát triển CNXH'
+},
+{
+  id: 15,
+  question: 'Hồ Chí Minh nhìn nhận lợi ích cá nhân trong CNXH như thế nào?',
+  options: [
+    'Phải loại bỏ',
+    'Không cần quan tâm',
+    'Chỉ phục vụ tập thể',
+    'Tôn trọng lợi ích cá nhân chính đáng'
+  ],
+  correctAnswer: 3,
+  explanation: 'Người cho rằng cần tôn trọng và thỏa mãn lợi ích cá nhân chính đáng.',
+  section: 'Mục tiêu và động lực phát triển CNXH'
+},
 
-  // ========== PHẦN 4: Thời kỳ quá độ (5 câu) ==========
-  {
-    id: 16,
-    question: 'Đặc điểm lớn nhất của thời kỳ quá độ lên CNXH ở Việt Nam là gì?',
-    options: [
-      'Trải qua giai đoạn TBCN trước',
-      'Tiến thẳng lên CNXH từ nước nông nghiệp lạc hậu, không qua giai đoạn TBCN',
-      'Được các nước giúp đỡ hoàn toàn',
-      'Không có đặc điểm riêng'
-    ],
-    correctAnswer: 1,
-    explanation: 'Đặc điểm lớn nhất là Việt Nam tiến thẳng lên CNXH từ một nước nông nghiệp lạc hậu, không trải qua giai đoạn phát triển tư bản chủ nghĩa.',
-    section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
-  },
-  {
-    id: 17,
-    question: 'Tính chất của thời kỳ quá độ lên CNXH theo Hồ Chí Minh là gì?',
-    options: [
-      'Ngắn gọn và đơn giản',
-      'Cải biến sâu sắc nhất nhưng phức tạp, lâu dài và gian khổ nhất',
-      'Không có gì đặc biệt',
-      'Hoàn toàn giống các nước khác'
-    ],
-    correctAnswer: 1,
-    explanation: 'Đây là thời kỳ cải biến sâu sắc nhất nhưng cũng phức tạp, lâu dài và gian khổ nhất trong lịch sử.',
-    section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
-  },
-  {
-    id: 18,
-    question: 'Nền tảng lý luận cho mọi tư tưởng và hành động trong thời kỳ quá độ là gì?',
-    options: [
-      'Tư tưởng phong kiến',
-      'Chủ nghĩa tư bản',
-      'Chủ nghĩa Mác - Lênin',
-      'Tư tưởng tôn giáo'
-    ],
-    correctAnswer: 2,
-    explanation: 'Mọi tư tưởng và hành động phải dựa trên chủ nghĩa Mác - Lênin - đây là nền tảng lý luận cơ bản.',
-    section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
-  },
-  {
-    id: 19,
-    question: 'Nguyên tắc "Xây đi đôi với Chống" trong thời kỳ quá độ có nghĩa là gì?',
-    options: [
-      'Chỉ xây dựng, không cần chống',
-      'Chỉ chống, không cần xây dựng',
-      'Vừa xây dựng yếu tố mới, vừa chống lực lượng phá hoại và căn bệnh nội bộ',
-      'Không làm gì cả'
-    ],
-    correctAnswer: 2,
-    explanation: 'Nguyên tắc này có nghĩa vừa xây dựng các yếu tố mới, vừa phải quyết liệt chống lại các lực lượng phá hoại và các căn bệnh nội bộ như tham ô, lãng phí.',
-    section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
-  },
-  {
-    id: 20,
-    question: 'Theo Hồ Chí Minh, khi học tập kinh nghiệm từ các nước anh em cần lưu ý điều gì?',
-    options: [
-      'Sao chép nguyên bản',
-      'Vận dụng sáng tạo, không được áp đặt máy móc',
-      'Không học tập ai',
-      'Chỉ học lý thuyết'
-    ],
-    correctAnswer: 1,
-    explanation: 'Học tập kinh nghiệm từ các nước anh em nhưng phải vận dụng sáng tạo, không được áp đặt máy móc.',
-    section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
-  },
+// ========== PHẦN 4: Thời kỳ quá độ (5 câu) ==========
+{
+  id: 16,
+  question: 'Đặc điểm lớn nhất của thời kỳ quá độ ở Việt Nam là gì?',
+  options: [
+    'Đi từ nước nông nghiệp lạc hậu lên CNXH',
+    'Trải qua CNTB',
+    'Có sẵn cơ sở vật chất',
+    'Được quốc tế hỗ trợ hoàn toàn'
+  ],
+  correctAnswer: 0,
+  explanation: 'Việt Nam tiến thẳng lên CNXH từ một nước nông nghiệp lạc hậu.',
+  section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
+},
+{
+  id: 17,
+  question: 'Tính chất của thời kỳ quá độ theo Hồ Chí Minh là gì?',
+  options: [
+    'Ngắn và thuận lợi',
+    'Phức tạp, lâu dài và gian khổ',
+    'Nhanh chóng hoàn thành',
+    'Ít biến động'
+  ],
+  correctAnswer: 1,
+  explanation: 'Đây là thời kỳ cải biến sâu sắc, lâu dài và gian khổ.',
+  section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
+},
+{
+  id: 18,
+  question: 'Nền tảng lý luận của thời kỳ quá độ là gì?',
+  options: [
+    'Chủ nghĩa tự do',
+    'Tư tưởng dân tộc',
+    'Chủ nghĩa Mác – Lênin',
+    'Tư tưởng cải lương'
+  ],
+  correctAnswer: 2,
+  explanation: 'Mọi tư tưởng và hành động phải dựa trên chủ nghĩa Mác – Lênin.',
+  section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
+},
+{
+  id: 19,
+  question: 'Nguyên tắc “Xây đi đôi với Chống” có ý nghĩa gì?',
+  options: [
+    'Chỉ chống tiêu cực',
+    'Chỉ xây dựng mới',
+    'Vừa xây dựng vừa đấu tranh',
+    'Không can thiệp'
+  ],
+  correctAnswer: 2,
+  explanation: 'Phải đồng thời xây dựng yếu tố mới và chống các lực lượng phá hoại.',
+  section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
+},
+{
+  id: 20,
+  question: 'Khi học tập kinh nghiệm quốc tế cần lưu ý điều gì?',
+  options: [
+    'Sao chép nguyên mẫu',
+    'Không học tập',
+    'Chỉ học lý thuyết',
+    'Vận dụng sáng tạo'
+  ],
+  correctAnswer: 3,
+  explanation: 'Phải học tập có chọn lọc và vận dụng sáng tạo.',
+  section: 'Thời kỳ quá độ lên CNXH tại Việt Nam'
+},
 
-  // ========== PHẦN 5: Mối quan hệ ĐLDT - CNXH (3 câu) ==========
-  {
-    id: 21,
-    question: 'Mối quan hệ giữa độc lập dân tộc và CNXH được Hồ Chí Minh xem là gì?',
-    options: [
-      'Hai vấn đề tách biệt',
-      'Sợi chỉ đỏ xuyên suốt tư tưởng của Người',
-      'Không có mối quan hệ',
-      'Mâu thuẫn với nhau'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mối quan hệ giữa độc lập dân tộc và CNXH là sợi chỉ đỏ xuyên suốt tư tưởng Hồ Chí Minh.',
-    section: 'Mối quan hệ ĐLDT và CNXH'
-  },
-  {
-    id: 22,
-    question: 'Trong mối quan hệ ĐLDT - CNXH, độc lập dân tộc đóng vai trò gì?',
-    options: [
-      'Là kết quả cuối cùng',
-      'Là tiền đề, mục tiêu đầu tiên tạo sức mạnh tiến tới CNXH',
-      'Không quan trọng',
-      'Có thể bỏ qua'
-    ],
-    correctAnswer: 1,
-    explanation: 'Độc lập dân tộc là tiền đề: Giải phóng dân tộc là mục tiêu đầu tiên, tạo ra sức mạnh để tiến tới CNXH.',
-    section: 'Mối quan hệ ĐLDT và CNXH'
-  },
-  {
-    id: 23,
-    question: 'Tại sao Hồ Chí Minh khẳng định "Chỉ có CNXH mới giải phóng hoàn toàn dân tộc"?',
-    options: [
-      'Vì CNXH có nhiều tiền',
-      'Vì CNXH đảm bảo nền độc lập vững chắc, không để đất nước nô lệ một lần nữa',
-      'Vì CNXH có quân đội mạnh',
-      'Vì CNXH được quốc tế công nhận'
-    ],
-    correctAnswer: 1,
-    explanation: 'CNXH là bảo chứng bền vững vì chỉ có CNXH mới giải phóng hoàn toàn dân tộc và đảm bảo nền độc lập vững chắc, không để đất nước rơi vào cảnh nô lệ một lần nữa.',
-    section: 'Mối quan hệ ĐLDT và CNXH'
-  },
+// ========== PHẦN 5: Mối quan hệ ĐLDT - CNXH (3 câu) ==========
+{
+  id: 21,
+  question: 'Mối quan hệ giữa ĐLDT và CNXH được Hồ Chí Minh ví như điều gì?',
+  options: [
+    'Hai con đường song song',
+    'Sợi chỉ đỏ xuyên suốt',
+    'Hai mục tiêu tách biệt',
+    'Hai giai đoạn đối lập'
+  ],
+  correctAnswer: 1,
+  explanation: 'Đây là sợi chỉ đỏ xuyên suốt tư tưởng Hồ Chí Minh.',
+  section: 'Mối quan hệ ĐLDT và CNXH'
+},
+{
+  id: 22,
+  question: 'Độc lập dân tộc giữ vai trò gì trong tiến trình CNXH?',
+  options: [
+    'Kết quả cuối cùng',
+    'Tiền đề để phát triển CNXH',
+    'Không quan trọng',
+    'Có thể thay thế'
+  ],
+  correctAnswer: 1,
+  explanation: 'Độc lập dân tộc là tiền đề để tiến lên CNXH.',
+  section: 'Mối quan hệ ĐLDT và CNXH'
+},
+{
+  id: 23,
+  question: 'Vì sao chỉ CNXH mới đảm bảo độc lập dân tộc bền vững?',
+  options: [
+    'Do tiềm lực quân sự',
+    'Do sự ủng hộ quốc tế',
+    'Do phát triển kinh tế',
+    'Do giải phóng triệt để con người và xã hội'
+  ],
+  correctAnswer: 3,
+  explanation: 'CNXH giải phóng triệt để dân tộc và con người.',
+  section: 'Mối quan hệ ĐLDT và CNXH'
+},
 
-  // ========== PHẦN 6: Vận dụng trong đổi mới (2 câu) ==========
-  {
-    id: 24,
-    question: 'Cơ chế "dân biết, dân bàn, dân làm, dân kiểm tra" nhằm mục đích gì?',
-    options: [
-      'Kiểm soát nhân dân',
-      'Để người dân thực sự tham gia quản lý xã hội, phát huy dân chủ',
-      'Chỉ để hình thức',
-      'Để giảm quyền lực nhà nước'
-    ],
-    correctAnswer: 1,
-    explanation: 'Cơ chế "dân biết, dân bàn, dân làm, dân kiểm tra" nhằm thực hiện tốt để người dân thực sự tham gia quản lý xã hội, phát huy dân chủ.',
-    section: 'Vận dụng trong sự nghiệp đổi mới'
-  },
-  {
-    id: 25,
-    question: 'Trong công tác chỉnh đốn Đảng hiện nay, cần đấu tranh chống những biểu hiện nào?',
-    options: [
-      'Chỉ chống tham nhũng',
-      'Suy thoái tư tưởng, đạo đức và "tự diễn biến", "tự chuyển hóa"',
-      'Không cần chống gì',
-      'Chỉ chống những người khác đảng'
-    ],
-    correctAnswer: 1,
-    explanation: 'Chỉnh đốn Đảng cần đấu tranh chống suy thoái tư tưởng, đạo đức và các biểu hiện "tự diễn biến", "tự chuyển hóa".',
-    section: 'Vận dụng trong sự nghiệp đổi mới'
-  }
+// ========== PHẦN 6: Vận dụng trong đổi mới (2 câu) ==========
+{
+  id: 24,
+  question: 'Mục đích của cơ chế “dân biết, dân bàn, dân làm, dân kiểm tra” là gì?',
+  options: [
+    'Tăng quản lý',
+    'Phát huy dân chủ',
+    'Giảm trách nhiệm nhà nước',
+    'Mang tính hình thức'
+  ],
+  correctAnswer: 1,
+  explanation: 'Cơ chế này nhằm phát huy quyền làm chủ của nhân dân.',
+  section: 'Vận dụng trong sự nghiệp đổi mới'
+},
+{
+  id: 25,
+  question: 'Nội dung trọng tâm trong chỉnh đốn Đảng hiện nay là gì?',
+  options: [
+    'Chống suy thoái tư tưởng, đạo đức',
+    'Mở rộng tổ chức',
+    'Tăng quyền lực',
+    'Giảm kỷ luật'
+  ],
+  correctAnswer: 0,
+  explanation: 'Cần đấu tranh chống suy thoái tư tưởng, đạo đức và tự diễn biến.',
+  section: 'Vận dụng trong sự nghiệp đổi mới'
+}
 ];
 
 // Hàm lấy câu hỏi theo section
