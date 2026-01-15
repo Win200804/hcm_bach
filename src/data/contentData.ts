@@ -12,6 +12,8 @@ export const contentSections: ContentSection[] = [
     title: 'I. Quan Niệm Tổng Quát Về Chủ Nghĩa Xã Hội',
     subtitle: 'Tư tưởng nhân văn và mục tiêu phục vụ con người',
     icon: '🎯',
+    image: '/asset/image/Screenshot 2026-01-15 135404.png',
+    imageCaption: 'Bác Hồ nói chuyện thân mật với công nhân - thể hiện tư tưởng nhân văn',
     content: [
       {
         id: '1-1',
@@ -44,6 +46,8 @@ export const contentSections: ContentSection[] = [
     title: 'II. Các Đặc Trưng Cơ Bản Của Xã Hội Xã Hội Chủ Nghĩa',
     subtitle: 'Bốn đặc trưng lớn làm cơ sở nhận diện và xây dựng',
     icon: '🏛️',
+    image: '/asset/image/Screenshot 2026-01-15 135438.png',
+    imageCaption: 'Bác Hồ bỏ phiếu bầu cử - thể hiện đặc trưng dân chủ của xã hội XHCN',
     content: [
       {
         id: '2-1',
@@ -95,6 +99,8 @@ export const contentSections: ContentSection[] = [
     title: 'III. Mục Tiêu Và Động Lực Phát Triển Chủ Nghĩa Xã Hội',
     subtitle: 'Các mục tiêu cụ thể và hệ thống động lực thúc đẩy',
     icon: '🚀',
+    image: '/asset/image/Screenshot 2026-01-15 135449.png',
+    imageCaption: 'Bác Hồ cùng các tầng lớp nhân dân - sức mạnh đoàn kết là động lực phát triển',
     content: [
       {
         id: '3-1',
@@ -124,6 +130,8 @@ export const contentSections: ContentSection[] = [
     title: 'IV. Thời Kỳ Quá Độ Lên Chủ Nghĩa Xã Hội Tại Việt Nam',
     subtitle: 'Tính chất đặc thù và các nguyên tắc xây dựng then chốt',
     icon: '🔄',
+    image: '/asset/image/Screenshot 2026-01-15 135417.png',
+    imageCaption: 'Hồ Chí Minh - Mác - Lênin: Nền tảng lý luận của thời kỳ quá độ',
     content: [
       {
         id: '4-1',
@@ -152,6 +160,8 @@ export const contentSections: ContentSection[] = [
     title: 'V. Mối Quan Hệ Giữa Độc Lập Dân Tộc Và Chủ Nghĩa Xã Hội',
     subtitle: 'Sợi chỉ đỏ xuyên suốt tư tưởng Hồ Chí Minh',
     icon: '🔗',
+    image: '/asset/image/Screenshot 2026-01-15 135427.png',
+    imageCaption: 'Bác Hồ đọc Tuyên ngôn Độc lập - Độc lập dân tộc là tiền đề cho CNXH',
     content: [
       {
         id: '5-1',
@@ -172,6 +182,8 @@ export const contentSections: ContentSection[] = [
     title: 'VI. Vận Dụng Trong Sự Nghiệp Đổi Mới Hiện Nay',
     subtitle: 'Áp dụng tư tưởng HCM trong bối cảnh đương đại',
     icon: '🌟',
+    image: '/asset/image/Screenshot 2026-01-15 135444.png',
+    imageCaption: 'Nhân dân Việt Nam trong thời kỳ đổi mới - Vận dụng tư tưởng HCM',
     content: [
       {
         id: '6-1',

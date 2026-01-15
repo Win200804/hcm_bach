@@ -9,6 +9,8 @@ export interface ContentSection {
   subtitle?: string;             // Tiêu đề phụ (tùy chọn)
   content: ContentItem[];        // Danh sách các mục nội dung
   icon?: string;                 // Icon đại diện
+  image?: string;                // Đường dẫn ảnh minh họa
+  imageCaption?: string;         // Chú thích ảnh
 }
 
 // Interface cho một mục nội dung con

@@ -89,6 +89,34 @@ export default function ContentSection({ section, onReadComplete }: ContentSecti
         </div>
       </motion.header>
 
+      {/* Section image - Ảnh minh họa */}
+      {section.image && (
+        <motion.figure
+          variants={itemVariants}
+          className="mb-8 overflow-hidden rounded-xl border border-vn-red/30 shadow-lg"
+        >
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="relative overflow-hidden"
+          >
+            <img
+              src={section.image}
+              alt={section.imageCaption || section.title}
+              className="w-full h-auto object-cover max-h-[400px]"
+              loading="lazy"
+            />
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-vn-dark/60 via-transparent to-transparent pointer-events-none" />
+          </motion.div>
+          {section.imageCaption && (
+            <figcaption className="bg-vn-dark/80 backdrop-blur-sm px-4 py-3 text-sm text-vn-cream/80 italic text-center border-t border-vn-red/20">
+              {section.imageCaption}
+            </figcaption>
+          )}
+        </motion.figure>
+      )}
+
       {/* Section content */}
       <div className="space-y-8 ml-0 md:ml-12">
         {section.content.map((item, index) => (

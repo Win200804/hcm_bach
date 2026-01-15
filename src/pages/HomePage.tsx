@@ -202,6 +202,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Image Banner */}
+      <section className="py-12 bg-gradient-to-b from-vn-dark to-vn-dark-light overflow-hidden">
+        <div className="section-container">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative rounded-2xl overflow-hidden shadow-2xl border border-vn-red/30"
+          >
+            <img
+              src="/asset/image/Screenshot 2026-01-15 135456.png"
+              alt="Nhân dân Việt Nam đoàn kết dưới ngọn cờ Đảng và Tổ quốc"
+              className="w-full h-auto object-cover max-h-[450px]"
+            />
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-vn-dark via-vn-dark/30 to-transparent" />
+            {/* Caption overlay */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="font-display text-xl md:text-2xl text-vn-yellow italic text-center"
+              >
+                "Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công"
+              </motion.p>
+              <p className="text-sm text-vn-cream/70 text-center mt-2">— Hồ Chí Minh</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Content Overview */}
       <section className="py-16">
         <div className="section-container">
